@@ -2,9 +2,23 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
     
-    <!-- Rubrik -->
     <h1><a href="/index.aspx">Yet another contactlist</a></h1>
 
+        <table class="table table-responsive">
+        <thead>
+            <tr>
+                <td>Firstname</td>
+                <td>Lastname</td>
+                <td>&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+            <asp:Literal ID="ContactLiteral" runat="server"></asp:Literal>
+        </tbody>
+    </table>
+
+<%-- GAMMAL KOD 
+    <!-- Rubrik -->
     <div id="left">
         <!-- Knapp för att tömma allt i fälten -->
         <asp:Button ID="EmptyFieldButton" runat="server" Text="Empty Fields" OnClick="EmptyFieldButton_Click" /><br />
@@ -37,6 +51,6 @@
     <div id="right">
         <!-- Alla kontakter i en listbox -->
         <asp:ListBox ID="ListboxContacts" runat="server" Height="429px" Width="333px" AutoPostBack="True" OnSelectedIndexChanged="ListboxContacts_SelectedIndexChanged"></asp:ListBox>
-    </div>
+    </div>--%>
 
 </asp:Content>
