@@ -31,6 +31,15 @@ namespace Ovn30 {
         protected global::System.Web.UI.WebControls.TextBox FirstNameInput;
         
         /// <summary>
+        /// FirstNameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FirstNameValidator;
+        
+        /// <summary>
         /// LastNameLabel control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace Ovn30 {
         protected global::System.Web.UI.WebControls.TextBox LastNameInput;
         
         /// <summary>
+        /// LastNameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator LastNameValidator;
+        
+        /// <summary>
         /// SSNLabel control.
         /// </summary>
         /// <remarks>
@@ -65,6 +83,15 @@ namespace Ovn30 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SSNInput;
+        
+        /// <summary>
+        /// SSNValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator SSNValidator;
         
         /// <summary>
         /// space control.

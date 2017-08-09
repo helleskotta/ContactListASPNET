@@ -15,10 +15,11 @@ namespace Ovn30
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
-            UpdateListbox();
+            if (!IsPostBack)
+                UpdateListbox();
         }
 
+        // Ladda om Listbox - funkar
         private void UpdateListbox()
         {
             List<Contact> contacts = MySQL.ReadContacts();
@@ -31,15 +32,14 @@ namespace Ovn30
             }
         }
 
-
+        // Lägg till kontakt - funkar
         protected void AddAContact_Click(object sender, EventArgs e)
         {
             string firstName = FirstNameInput.Text;
             string lastName = LastNameInput.Text;
             string ssn = SSNInput.Text;
-            
 
-            if (firstName.Length <= 2 || lastName.Length <= 2 || ssn.Length != 10)
+            if (!IsValid)
             {
                 // Felmeddelande
             }
@@ -53,7 +53,7 @@ namespace Ovn30
                 UpdateListbox();
             }
         }
-
+        
         protected void ListboxContacts_SelectedIndexChanged(object sender, EventArgs e)
         {
             int contactID = Convert.ToInt32(ListboxContacts.SelectedValue);
@@ -63,17 +63,39 @@ namespace Ovn30
             LastNameInput.Text = tempContact.LastName;
             SSNInput.Text = tempContact.SSN;
         }
-
+        
         protected void DeleteContactButton_Click(object sender, EventArgs e)
         {
-            int contactID = Convert.ToInt32(ListboxContacts.SelectedValue);
-            FirstNameInput.Text = "";
-            LastNameInput.Text = "";
-            SSNInput.Text = "";
-            MySQL.DeleteContact(contactID);
+            if (IsValid)
+            {
+                int contactID = Convert.ToInt32(ListboxContacts.SelectedValue);
 
-            UpdateListbox();
+                MySQL.DeleteContact(contactID);
 
+                FirstNameInput.Text = "";
+                LastNameInput.Text = "";
+                SSNInput.Text = "";
+
+                UpdateListbox();
+                // TODO Javascript popup
+            }
+        }
+
+        protected void UpdateContactButton_Click(object sender, EventArgs e)
+        {
+            if (IsValid)
+            {
+                int contactID = Convert.ToInt32(ListboxContacts.SelectedValue);
+                string firstName = FirstNameInput.Text;
+                string lastName = LastNameInput.Text;
+                string ssn = SSNInput.Text;
+
+                MySQL.UpdateContact(contactID, firstName, lastName, ssn);
+                FirstNameInput.Text = "";
+                LastNameInput.Text = "";
+                SSNInput.Text = "";
+                UpdateListbox();
+            }
         }
     }
 }

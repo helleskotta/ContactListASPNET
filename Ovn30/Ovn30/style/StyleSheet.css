@@ -26,6 +26,17 @@ h1{
     text-transform:uppercase;
 }
 
+h1 a{
+    text-decoration:none;
+    color:black;
+}
+
+h4{
+    font-size:8px;
+    text-transform:uppercase;
+    color:red;
+}
+
 input[type=submit], [type=button] {
     padding: 5px 8px;
     background: black;
@@ -41,5 +52,9 @@ input[type=submit], [type=button] {
     input[type=submit]:hover, [type=button]:hover {
         filter: alpha(opacity=75);
         opacity: 0.75;
-        -moz-opacity: 0.75;
     }
+
+select[size], select[multiple], select[size][multiple] {
+    background: url(http://payload.cargocollective.com/1/3/123817/1616243/pikachu.gif) no-repeat right bottom;
+    background-size: 150px;
+}

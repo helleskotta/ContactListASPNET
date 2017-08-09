@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>YET ANOTHER CONTACTLIST</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     <link href="style/StyleSheet.css" rel="stylesheet" />
     </asp:ContentPlaceHolder>
