@@ -23,7 +23,9 @@
         <br />
         <asp:Label ID="space" runat="server" Text="" Width="110px"></asp:Label>
         <asp:Button ID="AddAContact" runat="server" Text="Add" OnClick="AddAContact_Click" />
-        <!-- TO DO Alert - OBS! Vill du verkligen lägga till samma kontakt igen? Ja/Nej/Uppdatera befintlig-->
+
+            <% // TODO: Alert - OBS! Vill du verkligen lägga till samma kontakt igen? Ja/Nej/Uppdatera befintlig %>
+
         <asp:Button ID="UpdateContactButton" runat="server" Text="Update" OnClick="UpdateContactButton_Click" />
         <asp:Button ID="DeleteContactButton" runat="server" Text="Delete" OnClick="DeleteContactButton_Click" />
 
