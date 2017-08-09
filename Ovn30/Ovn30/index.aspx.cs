@@ -46,9 +46,7 @@ namespace Ovn30
             else
             {
                 MySQL.CreateContact(firstName, lastName, ssn);
-                FirstNameInput.Text = "";
-                LastNameInput.Text = "";
-                SSNInput.Text = "";
+                EmptyField();
 
                 UpdateListbox();
             }
@@ -71,10 +69,7 @@ namespace Ovn30
                 int contactID = Convert.ToInt32(ListboxContacts.SelectedValue);
 
                 MySQL.DeleteContact(contactID);
-
-                FirstNameInput.Text = "";
-                LastNameInput.Text = "";
-                SSNInput.Text = "";
+                EmptyField();
 
                 UpdateListbox();
                 // TODO Javascript popup
@@ -91,11 +86,21 @@ namespace Ovn30
                 string ssn = SSNInput.Text;
 
                 MySQL.UpdateContact(contactID, firstName, lastName, ssn);
-                FirstNameInput.Text = "";
-                LastNameInput.Text = "";
-                SSNInput.Text = "";
-                UpdateListbox();
+                EmptyField();
             }
+        }
+
+
+        public void EmptyField()
+        {
+            FirstNameInput.Text = "";
+            LastNameInput.Text = "";
+            SSNInput.Text = "";
+        }
+
+        protected void EmptyFieldButton_Click(object sender, EventArgs e)
+        {
+            EmptyField();
         }
     }
 }
