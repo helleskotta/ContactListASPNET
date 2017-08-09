@@ -5,23 +5,23 @@
     <div id="left">
         <asp:Button ID="EmptyFieldButton" runat="server" Text="Empty Fields" OnClick="EmptyFieldButton_Click" /><br />
         <br />
-        <asp:Label ID="FirstNameLabel" runat="server" Text="First name" Width="100px"></asp:Label>
+        <asp:Label ID="FirstNameLabel" runat="server" Text="First name" Width="110px"></asp:Label>
         <asp:TextBox ID="FirstNameInput" runat="server"></asp:TextBox>
         <h4>
             <asp:RequiredFieldValidator ID="FirstNameValidator" runat="server" ErrorMessage="Please fill in a name with more than 2 characters" ControlToValidate="FirstNameInput" EnableClientScript="False"></asp:RequiredFieldValidator>
         </h4>
-        <asp:Label ID="LastNameLabel" runat="server" Text="Last name" Width="100px"></asp:Label>
+        <asp:Label ID="LastNameLabel" runat="server" Text="Last name" Width="110px"></asp:Label>
         <asp:TextBox ID="LastNameInput" runat="server"></asp:TextBox>
         <h4>
             <asp:RequiredFieldValidator ID="LastNameValidator" runat="server" ErrorMessage="Please fill in a name with more than 2 characters" ControlToValidate="LastNameInput" EnableClientScript="False"></asp:RequiredFieldValidator>
         </h4>
-        <asp:Label ID="SSNLabel" runat="server" Text="SSN (YYMMDDXXXX)" Width="100px"></asp:Label>
+        <asp:Label ID="SSNLabel" runat="server" Text="SSN (YYMMDDXXXX)" Width="110px"></asp:Label>
         <asp:TextBox ID="SSNInput" runat="server"></asp:TextBox>
         <h4>
             <asp:RequiredFieldValidator ID="SSNValidator" runat="server" ErrorMessage="Please fill in a valid SSN (YYMMDDXXXX)" ControlToValidate="SSNInput" EnableClientScript="False"></asp:RequiredFieldValidator>
         </h4>
         <br />
-        <asp:Label ID="space" runat="server" Text="" Width="100px"></asp:Label>
+        <asp:Label ID="space" runat="server" Text="" Width="110px"></asp:Label>
         <asp:Button ID="AddAContact" runat="server" Text="Add" OnClick="AddAContact_Click" />
         <!-- TO DO Alert - OBS! Vill du verkligen lägga till samma kontakt igen? Ja/Nej/Uppdatera befintlig-->
         <asp:Button ID="UpdateContactButton" runat="server" Text="Update" OnClick="UpdateContactButton_Click" />
