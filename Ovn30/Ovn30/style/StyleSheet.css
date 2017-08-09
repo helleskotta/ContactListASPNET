@@ -1,0 +1,45 @@
+﻿body {
+    font-family: Arial;
+    background: url(https://media.giphy.com/media/VEzLUniBk8vcY/giphy.gif) no-repeat left bottom fixed;
+}
+
+#wrapper{
+    width:650px;
+    margin:auto;
+}
+
+#left{
+    width:300px;
+    float:left;
+    padding-top:100px;
+}
+
+#right {
+    width: 300px;
+    float: right;
+}
+
+h1{
+    font-size:40px;
+    padding:40px 10px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+input[type=submit], [type=button] {
+    padding: 5px 8px;
+    background: black;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform:uppercase;
+}
+
+    input[type=submit]:hover, [type=button]:hover {
+        filter: alpha(opacity=75);
+        opacity: 0.75;
+        -moz-opacity: 0.75;
+    }
