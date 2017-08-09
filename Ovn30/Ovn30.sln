@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovn30", "Ovn30\Ovn30.csproj", "{4AFFFCD4-7389-4E2A-84AA-F0F64A966751}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlLib", "..\SqlLib\SqlLib\SqlLib.csproj", "{489E5902-A3DA-40B5-8956-128C6138E7D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlLib", "..\..\SqlLib\SqlLib\SqlLib.csproj", "{489E5902-A3DA-40B5-8956-128C6138E7D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

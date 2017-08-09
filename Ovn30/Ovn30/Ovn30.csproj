@@ -105,7 +105,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SqlLib\SqlLib\SqlLib.csproj">
+    <ProjectReference Include="..\..\..\SqlLib\SqlLib\SqlLib.csproj">
       <Project>{489e5902-a3da-40b5-8956-128c6138e7d1}</Project>
       <Name>SqlLib</Name>
     </ProjectReference>
